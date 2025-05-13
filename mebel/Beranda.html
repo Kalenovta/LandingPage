@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoodCraft - Mebel Kayu Berkualitas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+     .card {
+    transition: transform 0.5s, box-shadow 0.2s; /* Efek transisi untuk transformasi dan bayangan */
+}
+
+.card:hover {
+    transform: scale(0.98); /* Sedikit mengecil saat diklik */
+    box-shadow: 0 4px 20px rgba(95, 0, 228, 0.5); /* Bayangan yang lebih kuat saat diklik */
+}
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Transisi warna saat hover */
+}
+
+.nav-link:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black; /* Ganti warna garis sesuai keinginan */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Efek animasi saat hover */
+}
+
+
+
+
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark-subtle sticky-top justify-content-end">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="N letter.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            NovCraft
+          </a>
+            
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-4">
+                        <a class="nav-link active  " aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active " href="#produk">produk</a>
+                    </li>
+                    <li class="nav-item ms-4"></li>
+                      <a class="nav-link active " href="#tentang">Tentang kami</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class=" text-center bg-body-secondary py-5">
+        <div class="container" >
+            <h1 class="display-3  mt-5">Selamat Datang di<br>Mebel Kayu Berkualitas dari NovCraft</h1>
+            <p class="lead mt-5">Dibuat dengan keahlian tangan, dari kayu pilihan <br> dan dijamin kualitas nya</p>
+            <a class="btn btn-dark btn-lg mt-5" href="#" role="button">Pesan Sekarang!!</a>
+            
+            
+        </div>
+    </section>
+
+     <!-- Produk Unggulan -->
+     <section class="py-5" id="produk">
+      <div class="container" >
+          <h2 class="text-center mb-5">Produk Unggulan Kami</h2>
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="MEJA.png" class="card-img-top" alt="Meja Kayu">
+                      <div class="card-body">
+                          <h5 class="card-title">Meja Kayu Solid</h5>
+                          <p class="card-text">Meja dengan desain minimalis dan bahan kayu jati berkualitas.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="kursi.jpg" class="card-img-top" alt="Kursi Kayu">
+                      <div class="card-body">
+                          <h5 class="card-title mt-5">Kursi  Elegan</h5>
+                          <p class="card-text ">Kursi kayu dengan sentuhan modern untuk kenyamanan maksimal.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="lemari.jpg" class="card-img-top" alt="Lemari Kayu">
+                      <div class="card-body">
+                          <h5 class="card-title">Lemari Kayu Mewah</h5>
+                          <p class="card-text">Lemari kayu dengan desain klasik untuk ruang tamu Anda.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+   
+
+    <!-- Tentang Kami -->
+    <section class=" py-5 mb-5 bg-secondary-subtle" id="tentang">
+        <div class="container" >
+            <h2 class="text-center  mb-5 mt-5">Tentang NovCraft</h2>
+            <div class="row">
+                <div class="col-md-6 mt-5 ">
+                    <p>
+                        NovCraft adalah perusahaan mebel kayu yang  mengutamakan kualitas dan keindahan dalam setiap produk yang kami buat. 
+                        Semua mebel kami dirancang dengan penuh perhatian terhadap detail dan dibuat dari kayu pilihan terbaik.
+                    </p>
+                </div>
+                <div class="col-md-6 mt-5 ">
+                    <p>
+                     kami menyediakan berbagai jenis mebel kayu mulai dari meja, kursi, hingga lemari. 
+                     Setiap produk kami dibuat untuk memenuhi kepuasan dari pelanggan-pelanggan kami,
+                     dan kami akan berusaha untuk membuat produk dari mebel kayu kami berkualitas tinggi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+
+    <!-- pertanyaan -->
+     
+    <div class="accordion " id="accordionExample">
+        <p class="fs-1 text-center mb-5">Pertanyaan yang biasa muncul</p>
+        <div class="accordion-item">
+          <h2 class="accordion-header text-center">
+            
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Mengapa harus memilih kami ?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>mengapa Harus memilih kami?</strong>Karena Produk dari kami terjamin kualitas nya, produk hasil  mebel kayu kami juga tahan lama,  terbuat dari kayu jati pilihan, kami juga menyediakan berbagai macam produk yang beragam dari kursi, meja, dan lemari yang bisa dijamin kualitasnya dan tahan lama 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Apakah kualitas dari mebel ini terpercaya?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Apakah kualitas dari mebel ini terpercaya?</strong> Bisa dijamin bahwa produk dari mebel kami bisa terpercaya dan kualitasnya pasti kualitas yang terbaik, kami akan menjamin bahwa kualitas dari produk mebel kayu kami bisa terpercaya
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Apakah pelayanannya ramah-ramah??
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Apakah pelayanannya ramah-ramah??</strong>selain kami mengutamakan kualitas dari mebel kami, kami juga mengutamakan pelayanan yang ramah dan tamah, oleh karena itu jangan takut atau malu untuk bertanya kepada kami
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+
+            <p>Hubungi saya jika ada yang ingin ditanyakan</p>
+            <a class="navbar-brand " href="https://www.instagram.com/kalenovta_a/">
+              <img src="instagram.png" alt="Logo" width="47" height="41" class="d-inline-block align-text-top">
+            </a>
+            <a class="navbar-brand m-4" href="https://www.tiktok.com/@code.n21">
+              <img src="tiktok.png" alt="Logo" width="44" height="41" class="d-inline-block align-text-top">
+            </a>
+            <a class="navbar-brand " href="#"></a>
+            <img src="gmail.png" alt="Logo" width="47" height="44" class="d-inline-block align-text-top">
+          </a>
+            
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
